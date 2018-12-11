@@ -1,0 +1,116 @@
+load("@rules_idris//idris:rules_idris.bzl", "idris_library")
+
+idris_library (
+    name = "contrib",
+    deps = [],
+    srcs = [ "CFFI.idr"
+           , "CFFI/Memory.idr"
+           , "CFFI/Types.idr"
+
+           , "Control/Algebra.idr"
+           , "Control/Algebra/Lattice.idr"
+           , "Control/Algebra/NumericImplementations.idr"
+           , "Control/Algebra/VectorSpace.idr"
+
+           , "Control/Delayed.idr"
+
+           , "Control/Isomorphism/Extra.idr"
+           , "Control/Isomorphism/Fin.idr"
+           , "Control/Isomorphism/Primitives.idr"
+           , "Control/Isomorphism/Vect.idr"
+
+           , "Control/Monad/Syntax.idr"
+           , "Control/Partial.idr"
+           , "Control/Pipeline.idr"
+
+           , "Control/ST.idr"
+           , "Control/ST/Exception.idr"
+           , "Control/ST/ImplicitCall.idr"
+           , "Control/ST/Random.idr"
+           , "Control/ST/File.idr"
+
+           , "Data/Bool/Extra.idr"
+           , "Data/BoundedList.idr"
+           , "Data/Chain.idr"
+           , "Data/CoList.idr"
+           , "Data/Combinators.idr"
+           , "Data/Combinators/Applicative.idr"
+           , "Data/Combinators/Arrow.idr"
+           , "Data/Fin/Extra.idr"
+           , "Data/Fuel.idr"
+           , "Data/Fun.idr"
+           , "Data/Hash.idr"
+           , "Data/Heap.idr"
+           , "Data/IOArray.idr"
+           , "Data/List/Zipper.idr"
+           , "Data/List/Extra.idr"
+
+           , "Data/Matrix.idr"
+           , "Data/Matrix/Algebraic.idr"
+           , "Data/Matrix/Numeric.idr"
+
+           , "Data/Nat.idr"
+           , "Data/Nat/Parity.idr"
+           , "Data/Nat/DivMod.idr"
+           , "Data/Nat/DivMod/IteratedSubtraction.idr"
+
+           , "Data/Pairs/Implicit.idr"
+           , "Data/PosNat.idr"
+           , "Data/Rel.idr"
+           , "Data/Sign.idr"
+           , "Data/SortedBag.idr"
+           , "Data/SortedMap.idr"
+           , "Data/SortedSet.idr"
+           , "Data/Storable.idr"
+           , "Data/Stream/Extra.idr"
+           , "Data/String/Extra.idr"
+           , "Data/ZZ.idr"
+
+           , "Decidable/Decidable.idr"
+           , "Decidable/Order.idr"
+
+           , "Interfaces/Correlative.idr"
+           , "Interfaces/Verified.idr"
+           , "Interfaces/Proposition.idr"
+
+           , "Language/JSON.idr"
+           , "Language/JSON/Data.idr"
+           , "Language/JSON/Lexer.idr"
+           , "Language/JSON/Parser.idr"
+           , "Language/JSON/String.idr"
+           , "Language/JSON/String/Lexer.idr"
+           , "Language/JSON/String/Parser.idr"
+           , "Language/JSON/String/Tokens.idr"
+           , "Language/JSON/Tokens.idr"
+
+           , "Network/Cgi.idr"
+           , "Network/Socket.idr"
+           , "Network/Socket/Data.idr"
+           , "Network/Socket/Raw.idr"
+
+           , "System/Concurrency/Process.idr"
+
+           , "Test/Unit/Display.idr"
+           , "Test/Unit/Runners.idr"
+           , "Test/Unit/Generic.idr"
+           , "Test/Unit/Assertions.idr"
+           , "Test/Unit.idr"
+
+           , "Text/Lexer.idr"
+           , "Text/Lexer/Core.idr"
+
+           , "Text/Literate.idr"
+
+           , "Text/Parser.idr"
+           , "Text/Parser/Core.idr"
+
+           , "Text/PrettyPrint/WL/Core.idr"
+           , "Text/PrettyPrint/WL/Combinators.idr"
+           , "Text/PrettyPrint/WL/Characters.idr"
+           , "Text/PrettyPrint/WL.idr"
+
+           , "Text/Quantity.idr"
+           , "Text/Token.idr"
+           ],
+    visibility = ["//visibility:public"],
+)
